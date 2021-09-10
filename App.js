@@ -11,13 +11,17 @@ function checkBirthDateIsLucky() {
     outputMessage.innerText = "Enter details correctly ❌";
   } else {
     var newBirthDate = convertDatetoString(birthDate.value);
-    for (i = 0; i < newBirthDate.length; i++) {
-      sum = sum + Number(newBirthDate[i]);
-    }
-    if (sum % luckyNumber.value == 0) {
-      outputMessage.innerText = "Your birthday is lucky ✨";
+    if ((newBirthDate = "23061997")) {
+      outputMessage.innerText = "Neko birthday daniko lucky numberuu!";
     } else {
-      outputMessage.innerText = "Your birthday is not lucky 😐";
+      for (i = 0; i < newBirthDate.length; i++) {
+        sum = sum + Number(newBirthDate[i]);
+      }
+      if (sum % luckyNumber.value == 0) {
+        outputMessage.innerText = "Your birthday is lucky ✨";
+      } else {
+        outputMessage.innerText = "Your birthday is not lucky 😐";
+      }
     }
   }
 }
